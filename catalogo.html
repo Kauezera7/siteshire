@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Motos - MotoShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2456/2456835.png">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="home.html" class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2456/2456835.png" alt="MotoShop Logo">
+                    <span>MotoShop</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Filtros -->
+    <section class="filters-section">
+        <div class="container">
+            <h1 class="page-title">Catálogo de Motos</h1>
+            <p class="page-subtitle">Encontre a moto perfeita para você</p>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="color-filter">Filtrar por Cor:</label>
+                    <select id="color-filter" class="filter-select">
+                        <option value="all">Todas as cores</option>
+                        <option value="vermelho">Vermelho</option>
+                        <option value="preto">Preto</option>
+                        <option value="branco">Branco</option>
+                        <option value="azul">Azul</option>
+                        <option value="cinza">Cinza</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="fuel-filter">Filtrar por Combustível:</label>
+                    <select id="fuel-filter" class="filter-select">
+                        <option value="all">Todos</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="eletrica">Elétrica</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand-filter">Filtrar por Marca:</label>
+                    <select id="brand-filter" class="filter-select">
+                        <option value="all">Todas as marcas</option>
+                        <option value="shineray">Shineray</option>
+                        <option value="sbm">SBM</option>
+                    </select>
+                </div>
+                
+                <button id="reset-filters" class="btn btn-secondary">
+                    <i class="fas fa-redo"></i> Limpar Filtros
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Motos -->
+    <section class="catalog">
+        <div class="container">
+            <div id="moto-count" class="moto-count">
+                <span id="count">12</span> motos encontradas
+            </div>
+            
+            <div id="moto-list" class="moto-grid">
+                <!-- As motos serão carregadas via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="home.html" class="logo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2456/2456835.png" alt="MotoShop Logo">
+                        <span>MotoShop</span>
+                    </a>
+                    <p>As melhores motos com os melhores preços. Qualidade e segurança em primeiro lugar.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/motoshop" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/motoshop" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/motoshop" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/5511999998888" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (11) 9999-8888</p>
+                    <p><i class="fas fa-envelope"></i> contato@motoshop.com.br</p>
+                    <a href="https://wa.me/5511999998888" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 MotoShop - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511999998888" class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
