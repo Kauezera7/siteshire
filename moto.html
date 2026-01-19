@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moto Shineray 200cc - MotoShop</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Detalhes da Moto - MotoShop</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2456/2456835.png">
@@ -33,86 +33,66 @@
         </div>
     </header>
 
-    <!-- Conteúdo Principal -->
-    <main class="moto-detail">
+    <!-- Detalhes da Moto -->
+    <section class="moto-detail">
         <div class="container">
             <div class="breadcrumb">
-                <a href="home.html">Home</a> / 
-                <a href="catalogo.html">Catálogo</a> / 
-                <span>Shineray 200cc</span>
+                <a href="home.html">Home</a> &gt; <a href="catalogo.html">Catálogo</a> &gt; <span>Nome da Moto</span>
             </div>
-            
+
             <div class="moto-content">
                 <div class="moto-images">
                     <div class="main-image">
-                        <img id="main-moto-image" src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Shineray 200cc">
+                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Moto Principal" id="moto-main-image">
                     </div>
                 </div>
-                
+
                 <div class="moto-info">
-                    <h1 id="moto-title">Shineray 200cc</h1>
+                    <h1 id="moto-name">Nome da Moto</h1>
                     <div class="moto-meta">
-                        <span class="moto-brand" id="moto-brand">Shineray</span>
-                        <span class="moto-color" id="moto-color">Vermelho</span>
-                        <span class="moto-fuel" id="moto-fuel">Gasolina</span>
+                        <span class="moto-tag brand" id="moto-brand">Marca</span>
+                        <span class="moto-tag color" id="moto-color">Cor</span>
+                        <span class="moto-tag fuel" id="moto-fuel">Combustível</span>
                     </div>
-                    
                     <div class="moto-description">
                         <h2>Descrição</h2>
-                        <p id="moto-description">
-                            A Shineray 200cc é uma motocicleta perfeita para quem busca economia, desempenho e conforto. 
-                            Com um motor 200cc de alta eficiência, oferece baixo consumo de combustível sem abrir mão da potência. 
-                            Ideal para uso urbano e viagens curtas.
-                        </p>
+                        <p id="moto-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    
                     <div class="moto-features">
                         <h2>Características</h2>
                         <ul id="moto-features">
-                            <li><i class="fas fa-check"></i> Motor 200cc</li>
-                            <li><i class="fas fa-check"></i> Transmissão 5 marchas</li>
-                            <li><i class="fas fa-check"></i> Partida elétrica e pedal</li>
-                            <li><i class="fas fa-check"></i> Painel digital</li>
-                            <li><i class="fas fa-check"></i> Freio a disco dianteiro e traseiro</li>
-                            <li><i class="fas fa-check"></i> Suspensão dianteira telescópica</li>
-                            <li><i class="fas fa-check"></i> Tanque de 12 litros</li>
-                            <li><i class="fas fa-check"></i> Peso: 140kg</li>
+                            <li><i class="fas fa-check-circle"></i> Característica 1</li>
+                            <li><i class="fas fa-check-circle"></i> Característica 2</li>
+                            <li><i class="fas fa-check-circle"></i> Característica 3</li>
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Sidebar com Preço e Ação -->
-                <aside class="moto-sidebar">
+
+                <div class="moto-sidebar">
                     <div class="sidebar-card">
                         <div class="price">
-                            <span class="price-label">Preço à vista</span>
-                            <span class="price-value" id="moto-price">R$ 12.499,00</span>
+                            <span class="price-label">Preço:</span>
+                            <span class="price-value" id="moto-price">R$ 0.000,00</span>
                         </div>
-                        
                         <div class="installment">
-                            <p>ou 12x de R$ 1.208,50</p>
+                            <p>Em até 12x de <span id="moto-installment">R$ 000,00</span></p>
                         </div>
-                        
-                        <a href="https://wa.me/5511999998888?text=Olá! Gostaria de mais informações sobre a Shineray 200cc" 
-                           class="btn btn-primary btn-large btn-block" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            Converse com consultor de vendas
+                        <a href="#" class="btn btn-primary btn-block" id="whatsapp-contact-btn">
+                            <i class="fab fa-whatsapp"></i> Tenho Interesse!
                         </a>
-                        
                         <div class="contact-info">
                             <p><i class="fas fa-phone"></i> (11) 9999-8888</p>
-                            <p><i class="fas fa-clock"></i> Atendimento: 8h às 18h</p>
+                            <p><i class="fas fa-envelope"></i> contato@motoshop.com.br</p>
                         </div>
-                        
                         <div class="warranty">
-                            <h3><i class="fas fa-shield-alt"></i> Garantia</h3>
-                            <p>12 meses de garantia para o motor e 6 meses para as peças.</p>
+                            <h3><i class="fas fa-shield-alt"></i> Garantia de Qualidade</h3>
+                            <p>Veículos revisados e com garantia de fábrica ou loja.</p>
                         </div>
                     </div>
-                </aside>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- Rodapé -->
     <footer class="footer">
@@ -175,38 +155,6 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
-    <script>
-        // Script para carregar dados da moto específica
-        document.addEventListener('DOMContentLoaded', function() {
-            // Em uma aplicação real, esses dados viriam de um parâmetro de URL
-            const motoId = getMotoIdFromURL(); // Função fictícia
-            
-            // Carregar dados da moto baseado no ID
-            loadMotoData(motoId);
-        });
-        
-        function getMotoIdFromURL() {
-            // Simulação - em uma aplicação real, pegaria da URL
-            return 1;
-        }
-        
-        function loadMotoData(id) {
-            // Buscar a moto pelo ID
-            const motos = getMotosData();
-            const moto = motos.find(m => m.id == id);
-            
-            if (moto) {
-                document.getElementById('moto-title').textContent = moto.name;
-                document.getElementById('moto-brand').textContent = moto.brand;
-                document.getElementById('moto-color').textContent = moto.color;
-                document.getElementById('moto-fuel').textContent = moto.fuel === 'gasolina' ? 'Gasolina' : 'Elétrica';
-                document.getElementById('moto-price').textContent = formatPrice(moto.price);
-                
-                // Atualizar imagem
-                document.getElementById('main-moto-image').src = moto.image;
-            }
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
